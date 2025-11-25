@@ -10,7 +10,7 @@ btn.addEventListener('click', function(){
     // btn.style.backgroundColor = 'royalblue';
     var num = 50 + Math.floor(Math.random()*50);
 
-    info.innerHTML = `Download will complete in <span>${num/10}</span> seconds`
+    info.innerHTML = `Estimated time to complete downloading is : <span>${num/10}</span> seconds`;
     
     var int = setInterval(function(){
         a++;
@@ -20,6 +20,7 @@ btn.addEventListener('click', function(){
     
     setTimeout(function(){
         clearInterval(int);
+        info.innerHTML = `Downloaded in <span>${num/10}</span> seconds`;
         btn.style.opacity = 0.5;
         btn.innerHTML = 'Downloaded';
     },num*100);
