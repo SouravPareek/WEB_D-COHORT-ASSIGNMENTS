@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+main{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: top;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 250px;
+    height: 320px;
+    padding: 20px;
+}
+
+.save{
+    margin-left: 160px;
+    font-size: 10px;
+    padding: 6px 12px;
+    background-color: rgb(242, 241, 241);
+    border-radius: 5px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.logo{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    padding: 4px;
+    border: 1px solid rgb(211, 206, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    object-fit:contain;
+}
+
+.card h3{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.card h3 span{
+    font-size: 8px;
+    font-weight: 400;
+    color: grey;
+}
+
+.card > h2{
+    font-size: 16px;
+    white-space: wrap;
+    margin-top: 5px;
+}
+
+.tags{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 8px;
+    margin-left: 4px;
+}
+
+.tags p{
+    background-color: rgb(227, 225, 225);
+    font-size: 10px;
+    font-weight: 600;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.line{
+    background-color: rgb(206, 203, 203);
+    margin-top: 70px;
+    height: 1px;
+    width: 100%;
+}
+
+.btm{
+    margin-top: 20px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 40px; */
+}
+
+.pay h2{
+    font-size: 15px;
+}
+
+.pay p{
+    font-size: 8px;
+    font-weight: 400;
+    color: grey;
+}
+
+.btm button{
+    color: white;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btm button:active{
+    transform: scale(0.95);
+}
