@@ -74,7 +74,35 @@ var keys = [
     {
         key : 'H',
         music : 'Assets/46.mp3'
-    }
+    },
+    {
+        key : 'U',
+        music : 'Assets/47.mp3'
+    },
+    {
+        key : 'I',
+        music : 'Assets/48.mp3'
+    },
+    {
+        key : 'O',
+        music : 'Assets/49.mp3'
+    },
+    {
+        key : 'P',
+        music : 'Assets/50.mp3'
+    },
+    {
+        key : 'J',
+        music : 'Assets/51.mp3'
+    },
+    {
+        key : 'K',
+        music : 'Assets/52.mp3'
+    },
+    {
+        key : 'L',
+        music : 'Assets/53.mp3'
+    },
 ]
 
 var main = document.querySelector('main');
@@ -95,10 +123,15 @@ allKeys.forEach(function(btn){
     });
 });
 
-main.addEventListener("keydown", function(dets){
+document.addEventListener("keydown", function(dets){
     keys.forEach(function(elem){
-        if(dets.code === elem.key){
+        if(dets.code == `Key${elem.key}`){
             new Audio(elem.music).play();
         }
     });
+});
+
+document.addEventListener("keydown", function(dets){
+    console.log(dets.code);
+    
 });
