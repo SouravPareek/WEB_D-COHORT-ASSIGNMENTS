@@ -1,11 +1,12 @@
 import Info from "./Info";
 import Button from "./Button";
+import Button2 from "./Button2";
 
 const Card = (props) => {
   return (
-    <div className="relative shadow-xl shadow-blue-400 bg-linear-to-b from-blue-400 to-green-200 rounded-xl border-none w-64 h-83 px-1 py-1 m-4">
+    <div className="relative shadow-xl bg-linear-to-b from-emerald-100 to-teal-100 rounded-2xl border-none w-64 h-83 px-1 py-1 m-4 shadow-black/70 transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-2xl">
       <div
-        className="w-62 h-40 rounded-xl border-none bg-cover"
+        className="w-62 h-40 rounded-t-2xl border-none bg-cover"
         style={{ backgroundImage: `url(${props.cover})` }}
       ></div>
 
@@ -14,9 +15,7 @@ const Card = (props) => {
         style={{ backgroundImage: `url(${props.pic})` }}
       ></div>
 
-      <div>
-        <Button />
-      </div>
+      <div>{props.follow == 1 ? <Button2 /> : <Button />}</div>
 
       <h1 className="mt-10 px-3 text-center text-gray-400 text-2xl whitespace-nowrap">
         {props.title}

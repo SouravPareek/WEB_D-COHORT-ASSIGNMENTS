@@ -134,6 +134,7 @@ const App = () => {
             likes={elem.likesCount}
             posts={elem.postCount}
             views={elem.viewsCount}
+            follow={elem.followed}
           />
         );
       })}
