@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    width: 100%;
+}
+
+#root{
+    height: 100%;
+    width: 100%;
+}
+
+.App{
+    height: 100%;
+    width: 100%;
+    padding: 10px 30px;
+    display: flex;
+    flex-direction: column;
+    font-family: Montserrat;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    letter-spacing: -0.8px;
+}
+
+.navbar .Name{
+    width: auto;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.navbar .links{
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+
+.navbar .links a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar .Book{
+    width: auto;
+}
+
+.navbar .Book button{
+    background-color: #0D1A2D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.navbar .Book button:active{
+    scale: 0.95;
+}
+
+/* Section */
+.section{
+    background-image: url(./assets/bg-img.png);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 100px -20px rgba(0, 0, 0, 0.8) inset;
+}
+
+.section .hero{
+    margin-top: 90px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.section .hero h1{
+    color: white;
+    font-size: 46px;
+    font-weight: 400;
+    letter-spacing: -0.8px;
+}
+
+.section .hero .hero-para{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.section .hero .start-btn button{
+    background-color: #0D1A2D;
+    color: white;
+    font-size: 18px;
+    padding: 15px 20px;
+    border-radius: 30px;
+    width: auto;
+    border: none;
+    letter-spacing: 1px;
+    font-weight: 100;
+    cursor: pointer;
+    transition: 0.3s all ease;
+}
+.section .hero .start-btn button:active{
+    scale: 0.95;
+}
+
+.section .left-img p{
+    color: white;
+    letter-spacing: -0.8px;
+    position: absolute;
+    bottom: 50px;
+    left: 70px;
+}
+
+.section .left-img span{
+    margin-left: -64px;
+}
+
+.section .socials{
+    position: absolute;
+    bottom: 50px;
+    right: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.section .socials a{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.113);
+    cursor: pointer;
+}
